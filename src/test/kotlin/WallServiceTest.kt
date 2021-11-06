@@ -1,4 +1,9 @@
 import WallService.add
+import WallService.createComment
+import WallService.delete
+import WallService.deleteComment
+import WallService.edit
+import WallService.editComment
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -13,39 +18,34 @@ class WallServiceTest {
     }
 
     @Test
-    fun createComment() {
+    fun testCreateComment() {
+        val testComment: Comment= Comment(noteId = 0,message="test message")
+        val rezult=createComment(0,"test message")
+        assertEquals(rezult,testComment)
     }
 
     @Test
-    fun delete() {
+    fun testDelete() {
+        val rezult=delete(0)
+        assertTrue(rezult)
     }
 
     @Test
-    fun deleteComment() {
+    fun testDeleteComment() {
+        val rezult= deleteComment(0)
+        assertFalse(rezult)
     }
 
     @Test
-    fun edit() {
+    fun testEdit() {
+        val rezult= edit(0, "new title" , "new text")
+        assertTrue(rezult)
     }
 
     @Test
-    fun editComment() {
-    }
-
-    @Test
-    fun get() {
-    }
-
-    @Test
-    fun getById() {
-    }
-
-    @Test
-    fun getComments() {
-    }
-
-    @Test
-    fun restoreComment() {
+    fun testEditComment() {
+        val rezult= editComment(0, 0 , "new comment")
+        assertFalse(rezult)
     }
 
 }

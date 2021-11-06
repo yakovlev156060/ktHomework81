@@ -51,7 +51,7 @@ object WallService {
     }
 
     fun deleteComment(id: Int): Boolean {
-        for ((index,note) in comments.withIndex()){
+        for ((index,comment) in comments.withIndex()){
             if(index==id){
                 comments[index].isDelete=true
                 return true
@@ -75,7 +75,7 @@ object WallService {
         return false
     }
 
-    fun editComment(commentId: Int, ownerId:String , message:String): Boolean {
+    fun editComment(commentId: Int, ownerId:Int , message:String): Boolean {
         for ((index,note) in comments.withIndex()){
             if(index==commentId){
                 if(comments[index].isDelete==true){
@@ -89,7 +89,7 @@ object WallService {
         return false
     }
 
-    fun getNotes(userId: Int):Array<Notes>{
+    fun get(userId: Int):Array<Notes>{
         var userNotes = emptyArray<Notes>()
         for ((index,note) in notes.withIndex()){
             if(notes[index].userId==userId){
