@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WallServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-11-06T20:35:13" hostname="DESKTOP-548U6J8" time="0.154">
+  <properties/>
+  <testcase name="editComment" classname="WallServiceTest" time="0.005"/>
+  <testcase name="testAdd" classname="WallServiceTest" time="0.146"/>
+  <testcase name="delete" classname="WallServiceTest" time="0.001"/>
+  <testcase name="createComment" classname="WallServiceTest" time="0.0"/>
+  <testcase name="getById" classname="WallServiceTest" time="0.0"/>
+  <testcase name="get" classname="WallServiceTest" time="0.0"/>
+  <testcase name="edit" classname="WallServiceTest" time="0.0"/>
+  <testcase name="restoreComment" classname="WallServiceTest" time="0.001"/>
+  <testcase name="deleteComment" classname="WallServiceTest" time="0.0"/>
+  <testcase name="getComments" classname="WallServiceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
